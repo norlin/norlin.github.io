@@ -19,7 +19,6 @@
 	{#layout.scripts}
 		{~n}<script src="{.}" type="text/javascript"></script>
 	{/layout.scripts}
-	<script src="http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 </head>
 <body>
 <div id="layout" class="g-layout"></div>
