@@ -1,3 +1,7 @@
 {@my module="title" hidden="true"}Hello, world!{/my}
 
-Initial commit
+<div class="b-block">
+	Initial commit
+
+	<p>На этой страничке заголовок скрыт.</p>
+</div>

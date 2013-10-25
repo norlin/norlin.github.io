@@ -1004,7 +1004,7 @@
 /* file: title.dust */
 
 /* end module title */
-(function(){dust.register("page/index",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"title","hidden":"true"}).write("Initial commit");}function body_1(chk,ctx){return chk.write("Hello, world!");}return body_0;})();
+(function(){dust.register("page/index",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"title","hidden":"true"}).write("<div class=\"b-block\">Initial commit<p>На этой страничке заголовок скрыт.</p></div>");}function body_1(chk,ctx){return chk.write("Hello, world!");}return body_0;})();
 /* file: index.dust */
 (function(){dust.register("page/page2",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"title"}).write("<div class=\"b-block\">Test page for initial commit</div>");}function body_1(chk,ctx){return chk.write("Goodbye, world!");}return body_0;})();
 /* file: page2.dust */
