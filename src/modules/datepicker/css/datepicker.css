@@ -1,0 +1,26 @@
+.b-input__datepicker {
+	width: 110px;
+}
+
+.b-datepicker_button {
+	height: 26px;
+	width: 26px;
+	padding: 0;
+	border-radius: 50%;
+	margin: 2px 0 0 0;
+	text-align: center;
+}
+
+.b-datepicker_button_icon {
+	background: url('../i/datepicker/prevnext.png') no-repeat;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+}
+
+.b-datepicker_button_icon__prev {
+	background-position: -7px -6px;
+}
+.b-datepicker_button_icon__next {
+	background-position: -38px -6px;
+}

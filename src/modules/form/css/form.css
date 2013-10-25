@@ -1,0 +1,53 @@
+.b-form {
+	position: relative;
+
+	margin: 0;
+	padding: 20px 30px;
+
+	border: 1px solid #e1e1e1;
+	border-left: none;
+	border-right: none;
+
+	background: #f2f3f5;
+}
+
+.b-form fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+	.b-form_section {
+		padding-top: 20px;
+
+		border-top: 1px solid #e1e1e1;
+	}
+
+		.b-form_row {
+			display: block;
+
+			margin-bottom: 20px;
+		}
+
+			.b-form_component {
+				box-sizing: border-box;
+
+				display: inline-block;
+				width: 33%;
+
+				padding-right: 50px;
+
+				white-space: nowrap;
+
+				vertical-align: top;
+			}
+
+				.b-form_label {
+					display: block;
+
+					padding-bottom: 7px;
+				}
+
+				.b-form_inputs {
+					display: block;
+				}

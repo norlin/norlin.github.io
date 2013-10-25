@@ -1,0 +1,30 @@
+/* global app */
+(function ($, app) {
+	var {ModuleName} = app.createModule({
+			name: '{moduleName}',
+			template: '{moduleName}'
+		});
+
+	/*
+	{ModuleName}.prototype.render = function (ready) {
+		var module = this,
+			moduleSource = this.data.dom; //`<div data-type="module">` node from app template
+
+		this.processDOM();
+
+		//method for custom html renderer
+
+		dust.render(this.name + '/' + this.template, this.data, function (err, moduleHtml) {
+			module.node = $(moduleHtml);
+			ready();
+		});
+	};
+	*/
+
+	{ModuleName}.prototype.ready = function () {
+		var module = this;
+
+		//module usage
+	};
+} (jQuery, app));
+/* global -app */

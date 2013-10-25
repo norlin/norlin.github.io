@@ -1,0 +1,5 @@
+<form class="b-form {module.options.class}" action="{module.options.action}" type="{?module.options.type}{module.options.type}{:else}POST{/module.options.type}">
+	<fieldset>
+		{module.content|s}
+	</fieldset>
+</form>

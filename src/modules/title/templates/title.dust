@@ -1,0 +1,3 @@
+<div class="b-title b-block{?module.options.hidden} g-hidden{/module.options.hidden}">
+	<h2 class="b-title_text js-title-name">{module.content|s}</h2>
+</div>

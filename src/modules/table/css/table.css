@@ -1,0 +1,29 @@
+.b-table {
+	border-collapse: collapse;
+	width: 100%;
+
+	color: #444;
+
+	text-align: left;
+}
+
+.b-table thead {
+	color: #000;
+
+	font-weight: bold;
+}
+
+.b-table tbody tr {
+	border-top: 1px solid #e1e1e1;
+}
+
+.b-table tbody tr:hover {
+	background: #f9f9f9;
+}
+
+.b-table td,
+.b-table th {
+	padding: 10px 5px 10px 10px;
+
+	vertical-align: middle;
+}

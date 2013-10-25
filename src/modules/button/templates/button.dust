@@ -1,0 +1,6 @@
+<button class="b-button{?module.options.color} b-button__{module.options.color}{/module.options.color}" {?module.options.disabled}disabled{/module.options.disabled}>
+    {?module.options.icon}
+        <i class="b-button_icon b-button_icon__{module.options.icon}"></i>
+    {/module.options.icon}
+    {module.content}
+</button>

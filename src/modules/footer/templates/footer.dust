@@ -1,0 +1,9 @@
+{?module.options.sticked}<div class="b-footer_push"></div>{/module.options.sticked}
+<div class="b-footer{?module.options.sticked} b-footer__sticked{/module.options.sticked}">
+	{!<div class="b-footer_block">
+		<a class="b-footer_logo" href="http://norlin.ru" target="_blank">&nbsp;</a>
+	</div>!}
+	<div class="b-footer_block b-footer_block__last">
+		<a class="b-footer_link" href="mailto:alexey@norlin.ru">alexey@norlin.ru</a>
+	</div>
+</div>

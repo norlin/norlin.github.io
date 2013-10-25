@@ -1,0 +1,29 @@
+{
+	"name": "index",
+	"title": "Главная страница",
+	"version": "0.0.1",
+	"modules": [
+		"router",
+		"button",
+		"datepicker",
+		"scrollbar",
+		"header",
+		"tabs",
+		"dropdown",
+		"fixed",
+		"footer",
+		"select",
+		"loader",
+		"title"
+	],
+	"config": {
+		"production": {
+			"www": "../",
+			"host": "/"
+		},
+		"development": {
+			"www": "../",
+			"host": ""
+		}
+	}
+}

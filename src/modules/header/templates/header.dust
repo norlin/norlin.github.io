@@ -1,0 +1,9 @@
+<div>
+{@my module="fixed"}
+	<div class="b-header g-transition-opacity">
+		<div class="b-header-content">
+			{>"header/content"/}
+		</div>
+	</div>
+{/my}
+</div>

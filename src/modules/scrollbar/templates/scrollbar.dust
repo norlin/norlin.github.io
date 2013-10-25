@@ -1,0 +1,1 @@
+<div class="b-scrollbar{?module.options.disabled} b-scrollbar__disabled{/module.options.disabled}" {?module.options.disabled}disabled{/module.options.disabled}><p>{module.content|s}</p></div>

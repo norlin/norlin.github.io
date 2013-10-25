@@ -1,0 +1,19 @@
+<div class="b-header_block b-header_block__first">
+	<h1 class="b-header_title{?module.options.class} b-header_title__{module.options.class}{/module.options.class}">{module.content|s}</h1>
+</div>
+<div class="b-header_block b-header_block__second">
+	{!<h2 class="b-header_page js-header-page"></h2>!}
+	<a class="b-header_button" href="/index" data-type="route">Hello</a>
+</div>
+<div class="b-header_block">
+	<a class="b-header_button" href="/page2" data-type="route">Bye</a>
+</div>
+
+<div class="b-header_right">
+	<div class="b-header_block">
+		{!@my module="userinfo"/!}
+	</div>
+	<div class="b-header_block">
+		<!-- help -->
+	</div>
+</div>

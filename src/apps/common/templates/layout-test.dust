@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />{~n}
+	<title>{?title}{title}{:else}Медтера{/title}</title>
+
+	{#layout.styles}
+		{~n}<link rel="stylesheet" href="{.}" />
+	{/layout.styles}
+
+	{?layout.stylesIE}
+	{~n}<!--[if IE]>
+		{#layout.stylesIE}
+			{~n}<link rel="stylesheet" href="{.}" />
+		{/layout.stylesIE}
+	{~n}<![endif]-->
+	{/layout.stylesIE}
+</head>
+<body>
+	<div id="mocha"></div>
+	{#layout.scriptsTest}
+		{~n}<script src="{.}" type="text/javascript"></script>
+	{/layout.scriptsTest}
+	<script type="text/javascript">
+		mocha.ui('bdd');
+		mocha.reporter('html');
+	</script>
+	{#layout.scriptsTestCases}
+		{~n}<script src="{.}" type="text/javascript"></script>
+	{/layout.scriptsTestCases}
+
+	<div id="layout" class="g-layout">Загрузка...</div>
+
+	{#layout.scripts}
+		{~n}<script src="{.}" type="text/javascript"></script>
+	{/layout.scripts}
+
+	{~n}<script type="text/javascript">
+		if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+		else { mocha.run(); }
+	</script>
+</body>
+</html>

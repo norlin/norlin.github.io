@@ -1,0 +1,19 @@
+.b-button_icon {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	width: 18px;
+	height: 28px;
+
+	background: center center no-repeat;
+
+	vertical-align: top;
+}
+
+.b-button:disabled > .b-button_icon,
+.b-button__disabled > .b-button_icon {
+	opacity: 0.3;
+}
+
+.b-button_icon__cat {
+	background-image: url(../i/button/cat.png);
+}

@@ -1,0 +1,1 @@
+<input class="b-input b-input__datepicker"{?module.options.id} id="{module.options.id}"{/module.options.id} type="text" value="{module.content}"{?module.options.disabled} disabled{/module.options.disabled} />

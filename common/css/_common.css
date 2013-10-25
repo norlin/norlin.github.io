@@ -1,0 +1,155 @@
+.b-block {
+  padding: 20px 30px;
+}
+/* file: b-block.css */
+.b-input {
+  display: inline-block;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  border: 1px #e7e7e7 solid;
+  border-top: 1px #cecece solid;
+  border-bottom: 1px #ebebeb solid;
+  border-radius: 3px;
+  background: #fcfcfc;
+  color: #333333;
+  font-size: 14px;
+  outline: none;
+}
+
+.b-input:focus {
+  border: 1px #b3bdce solid;
+  border-top: 1px #a6afc0 solid;
+  border-bottom: 1px #b4bed0 solid;
+  outline: none;
+}
+
+.b-input:disabled {
+  background: #faf7f7;
+  border-color: #ebebeb;
+}
+
+.b-input__inline {
+  display: inline-block;
+}
+
+.b-input__max-width {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* file: b-input.css */
+.b-label {
+  display: inline-block;
+  padding: 2px 5px;
+  line-height: 14px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.b-label__green {
+  background-color: #468847;
+  color: #fff;
+}
+
+.b-label__red {
+  background-color: #884647;
+  color: #fff;
+}
+/* file: b-label.css */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+body,
+.b-fixed-container {
+  background: #ffffff;
+}
+
+.g-transition-opacity {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.g-transition-background {
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.g-fade {
+  opacity: 0;
+}
+
+.g-hidden {
+  display: none;
+}
+
+.g-layout {
+  position: relative;
+  display: block;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  min-width: 950px;
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.g-padding {
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+a {
+  color: #8cb8f6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+/* file: styles.css */

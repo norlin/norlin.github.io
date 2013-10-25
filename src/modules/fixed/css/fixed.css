@@ -1,0 +1,22 @@
+.b-fixed {
+	position: relative;
+}
+
+.b-fixed__fixed {
+	position: fixed;
+	top: 0;
+
+	z-index: 100;
+}
+
+	.b-fixed-container {
+		width: 100%;
+		max-width: 1240px;
+
+		overflow: auto;
+	}
+
+	.b-fixed__inline {
+		display: inline-block;
+		width: auto;
+	}

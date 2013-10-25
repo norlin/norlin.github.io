@@ -1,0 +1,8 @@
+<div class="b-dropdown b-dropdown__mini g-transition-background">
+	<span class="b-dropdown_title{?module.options.class} {module.options.class}{/module.options.class}">
+		{module.options.title}
+	</span>
+</div>
+<div class="b-dropdown_list b-dropdown_list__block b-dropdown_list__hidden">
+	{module.content|s}
+</div>

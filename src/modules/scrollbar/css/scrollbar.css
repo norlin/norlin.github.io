@@ -1,0 +1,66 @@
+.b-scrollbar {
+	float:left;
+	overflow: auto;
+
+	height: 300px;
+	width: 180px;
+	margin: 0 10px 0 0;
+
+	border: 1px solid #e1e1e1;
+}
+
+.b-scrollbar p {
+	margin: 5px 10px 0px 10px;
+	padding: 0 0 0 0;
+}
+
+.b-scrollbar:disabled,
+.b-scrollbar__disabled {
+	border-color: #f2f2f2;
+	box-shadow: none;
+
+	color: #c9c9c9;
+
+	cursor: default;
+	background: #fff;
+}
+
+.b-scrollbar__disabled .jspTrack {
+	position: relative;
+
+	padding: 4px;
+
+	cursor: default;
+	background: #f9f9f9;
+}
+
+.b-scrollbar__disabled .jspDrag {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	border-radius: 5px;
+
+	background: #f1f1f1;
+	cursor: pointer;
+	cursor: default;
+}
+
+.b-scrollbar__disabled .jspDrag:hover {
+	background: #f1f1f1;
+	cursor: default;
+}
+
+.b-scrollbar__disabled .jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 18px;
+	height: 100%;
+
+	border-left: 1px solid #f2f2f2;
+
+	background: #d4d4d4;
+	cursor: default;
+}

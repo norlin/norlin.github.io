@@ -1,0 +1,5 @@
+{?module.options.input}
+	<input class="b-select {module.options.class}"{?module.options.name} name="{module.options.name}"{/module.options.name}{?module.options.id} id="{module.options.id}"{/module.options.id}{?module.options.type} type="{module.options.type}"{/module.options.type}/>
+{:else}
+	<select class="b-select {module.options.class}"{?module.options.name} name="{module.options.name}"{/module.options.name} {?module.options.disabled}disabled{/module.options.disabled}>{module.content|s}</select>
+{/module.options.input}

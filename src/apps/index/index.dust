@@ -1,0 +1,6 @@
+{@my module="header"}Norlin pages{/my}
+
+{@my module="router"/}
+
+{@my module="footer" sticked="true"/}
+{@my module="loader"/}

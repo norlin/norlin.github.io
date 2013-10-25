@@ -1,0 +1,3 @@
+<div class="b-fixed">
+	<div class="b-fixed-container{?module.options.inline} b-fixed__inline{/module.options.inline}">{module.content|s}</div>
+</div>

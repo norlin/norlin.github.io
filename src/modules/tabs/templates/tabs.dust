@@ -1,0 +1,25 @@
+<div>
+	{?module.options.fixed}
+	<div data-type="module" data-name="fixed">
+	{/module.options.fixed}
+		<div class="b-tabs-header">
+			<ul id="tabsHeader{module.id}" class="b-tabs-menu">
+				{#module.tabs}
+					<li data-id="{id}" class="b-tabs-item{?active} b-tabs-item__active{/active} g-transition-background">
+						<a class="b-tabs-link" href="#tab{id}">{title}</a>
+					</li>
+				{/module.tabs}
+			</ul>
+		</div>
+	{?module.options.fixed}
+	</div>
+	{/module.options.fixed}
+
+	<div id="tabsBody{module.id}" class="b-tabs-body">
+		{#module.tabs}
+			<div data-id="{id}" class="g-transition-opacity b-tabs-content{^active} g-hidden g-fade{/active}">
+				{content|s}
+			</div>
+		{/module.tabs}
+	</div>
+</div>

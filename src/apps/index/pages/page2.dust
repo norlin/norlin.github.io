@@ -1,0 +1,4 @@
+{@my module="title"}Goodbye, world!{/my}
+<div class="b-block">
+	Test page for initial commit
+</div>

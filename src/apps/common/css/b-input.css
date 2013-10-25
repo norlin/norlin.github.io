@@ -1,0 +1,39 @@
+.b-input {
+	display: inline-block;
+	height: 30px;
+
+	margin-bottom: 15px;
+	padding: 0 10px;
+
+	border: 1px #e7e7e7 solid;
+	border-top: 1px #cecece solid;
+	border-bottom: 1px #ebebeb solid;
+	border-radius: 3px;
+
+	background: #fcfcfc;
+
+	color: #333333;
+	font-size: 14px;
+	outline: none;
+}
+
+.b-input:focus {
+	border: 1px #b3bdce solid;
+	border-top: 1px #a6afc0 solid;
+	border-bottom: 1px #b4bed0 solid;
+	outline: none;
+}
+
+.b-input:disabled {
+	background: #faf7f7;
+	border-color: #ebebeb;
+}
+
+.b-input__inline {
+	display: inline-block;
+}
+
+.b-input__max-width {
+	box-sizing: border-box;
+	width: 100%;
+}

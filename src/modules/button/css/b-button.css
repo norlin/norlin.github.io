@@ -1,0 +1,63 @@
+.b-button {
+	box-sizing: border-box;
+	height: 30px;
+	padding: 0 12px;
+	margin: 0 6px 2px 0;
+
+	outline: none;
+	border: 1px solid rgb(216, 216, 216);
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+	font-size: 14px;
+	vertical-align: top;
+	line-height: 30px;
+	color: #333;
+
+	background: #f6f6f6;
+	background-image: linear-gradient(to bottom, #fdfdfd 0%, #f6f6f6 100%);
+
+	cursor: pointer;
+}
+
+.b-button:hover {
+	background: #f0f0f0;
+	background-image: linear-gradient(to bottom, #fbfbfb 0%, #f0f0f0 100%);
+}
+
+.b-button:active {
+	background: #fbfbfb;
+	background-image: linear-gradient(to bottom, #f0f0f0 0%, #fbfbfb 100%);
+}
+
+.b-button:disabled,
+.b-button__disabled {
+	background: #f6f6f6;
+	color: #c9c9c9;
+	border-color: #f2f2f2;
+	box-shadow: none;
+}
+
+.b-button__blue {
+	border: none;
+	color: #fff;
+	background: #3e74b8;
+	background-image: linear-gradient(to bottom, #5690d9 0%, #3e74b8 100%);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.b-button__blue:hover {
+	background: #367bd2;
+	background-image: linear-gradient(to bottom, #3c8aec 0%, #367bd2 100%);
+}
+
+.b-button__blue:active {
+	background: #3c8aec;
+	background-image: linear-gradient(to bottom, #367bd2 0%, #3c8aec 100%);
+}
+
+.b-button__blue:disabled {
+	background: #c7d9f0;
+	color: #e4edf8;
+}
+

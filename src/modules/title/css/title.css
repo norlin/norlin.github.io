@@ -1,0 +1,10 @@
+.b-title {
+	position: relative;
+}
+
+.b-title_text {
+	display: block;
+
+	margin: 0;
+	padding: 0;
+}

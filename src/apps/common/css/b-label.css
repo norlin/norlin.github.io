@@ -1,0 +1,20 @@
+.b-label {
+	display: inline-block;
+
+	padding: 2px 5px;
+	line-height: 14px;
+
+	border-radius: 5px;
+
+	font-size: 12px;
+}
+
+.b-label__green {
+	background-color: #468847;
+	color: #fff;
+}
+
+.b-label__red {
+	background-color: #884647;
+	color: #fff;
+}

@@ -1,0 +1,9 @@
+<div class="b-dropdown g-transition-background">
+	<span class="b-dropdown_title{?module.options.class} {module.options.class}{/module.options.class}">
+		{module.options.title}
+	</span>
+	<i class="b-dropdown_arrow"></i>
+</div>
+<ul class="b-dropdown_list{?module.options.block} b-dropdown_list__block{/module.options.block} b-dropdown_list__hidden">
+	{module.content|s}
+</ul>

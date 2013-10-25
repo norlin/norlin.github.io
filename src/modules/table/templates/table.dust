@@ -1,0 +1,8 @@
+{?module.header}
+	{@my module="fixed"}
+		{module.header|s}
+	{/my}
+{/module.header}
+<table class="b-table">
+	{module.content|s}
+</table>

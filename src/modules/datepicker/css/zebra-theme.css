@@ -1,0 +1,231 @@
+.Zebra_DatePicker {
+	display: none;
+
+	border: 1px solid #e3e3e3;
+
+	position: absolute;
+	z-index: 1000;
+
+	background: white;
+	box-shadow: 0 3px 18px rgba(0, 0, 0, 0.15);
+
+	line-height: 28px;
+}
+
+/* = GLOBALS
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.Zebra_DatePicker td,
+.Zebra_DatePicker th {
+	text-align: center;
+}
+
+.Zebra_DatePicker td {
+	cursor: pointer
+}
+
+.Zebra_DatePicker .dp_daypicker,
+.Zebra_DatePicker .dp_monthpicker,
+.Zebra_DatePicker .dp_yearpicker {
+	border-collapse: separate;
+	padding: 0 7px 7px 7px;
+}
+
+.Zebra_DatePicker .dp_daypicker td,
+.Zebra_DatePicker .dp_daypicker th,
+.Zebra_DatePicker .dp_monthpicker td,
+.Zebra_DatePicker .dp_yearpicker td {
+	width: 35px;
+	height: 35px;
+
+	border: 1px solid #f2f2f2;
+	border-left: none;
+	border-top: none;
+
+	line-height: 35px;
+}
+
+.Zebra_DatePicker .dp_daypicker td:first-of-type,
+.Zebra_DatePicker .dp_monthpicker td:first-of-type,
+.Zebra_DatePicker .dp_yearpicker td:first-of-type {
+	border-left: 1px solid #f2f2f2;
+}
+
+.Zebra_DatePicker .dp_daypicker th {
+	border: none;
+	border-bottom: 1px solid #f2f2f2;
+
+	font-weight: normal;
+	text-transform: capitalize;
+	font-size: 12px;
+	color: #85939a;
+}
+
+.Zebra_DatePicker,
+.Zebra_DatePicker .dp_header .dp_hover,
+.Zebra_DatePicker .dp_footer .dp_hover {
+	border-radius: 3px;
+}
+
+/* = HEADER
+----------------------------------------------------------------------------------------------------------------------*/
+
+.Zebra_DatePicker .dp_header {
+	padding: 0 7px;
+
+	background: #f7f8fa;
+
+	border: 5px solid #f7f8fa;
+	border-radius: 3px 3px 0 0;
+	border-collapse: separate;
+	border-spacing: 6px;
+}
+
+.Zebra_DatePicker .dp_header td {
+	cursor: pointer;
+}
+
+.Zebra_DatePicker .dp_header .dp_previous,
+.Zebra_DatePicker .dp_header .dp_next {
+	width: 25px;
+}
+
+.Zebra_DatePicker .dp_header .dp_caption {
+	border-radius: 3px;
+
+	line-height: 28px;
+	font-size: 12px;
+}
+
+.Zebra_DatePicker .dp_header .dp_hover {
+	background: none;
+}
+
+.Zebra_DatePicker .dp_header .dp_blocked {
+	color: #888;
+	cursor: default
+}
+
+/* = DATEPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker td.dp_not_in_month {
+	color: #fff;
+	cursor: default
+}
+
+.Zebra_DatePicker td.dp_not_in_month_selectable {
+	background: #F3F3F3;
+	color: #CDCDCD;
+	cursor: pointer
+}
+
+.Zebra_DatePicker td.dp_selected {
+	background: #8399b5;
+	color: #fff;
+	font-weight: bold;
+}
+
+.Zebra_DatePicker td.dp_week_number {
+	color: #808080;
+	cursor: text;
+	font-style: italic
+}
+
+/* = MONTHPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_monthpicker td {
+	width: 33%
+}
+
+/* = YEARPICKER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_yearpicker td {
+	width: 33%
+}
+
+/* = FOOTER
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_footer {
+	margin-top: 3px
+}
+
+.Zebra_DatePicker .dp_footer .dp_hover {
+	background: #e0e5ed;
+}
+
+/* = SELECT CURRENT DAY
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_today {
+	color: #FFF;
+	padding: 3px
+}
+
+/* = CLEAR DATE
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker .dp_clear {
+	color: #FFF;
+	padding: 3px
+}
+
+/* = SOME MORE GLOBALS (MUST BE LAST IN ORDER TO OVERWRITE PREVIOUS PROPERTIES)
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker td.dp_current {
+	color: #C40000
+}
+
+.Zebra_DatePicker td.dp_disabled_current {
+	color: #E38585
+}
+
+.Zebra_DatePicker td.dp_disabled {
+	background: #F3F3F3;
+	color: #CDCDCD;
+	cursor: default
+}
+
+.Zebra_DatePicker td.dp_hover {
+	background: #e0e5ed;
+}
+
+/* = ICON
+----------------------------------------------------------------------------------------------------------------------*/
+.Zebra_DatePicker_Icon {
+	display: block;
+
+	margin: 0 0 0 3px;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+
+	border: none;
+	outline: none;
+
+	background: url('../i/datepicker/calendar.png') no-repeat center center;
+	transition: background-image 0.4s ease;
+
+	text-indent: -9000px;
+	line-height: 0;
+	vertical-align: top;
+
+	cursor: pointer;
+
+	position: absolute;
+}
+
+.Zebra_DatePicker_Icon:hover {
+	background-image: url('../i/datepicker/calendar-hover.png');
+}
+
+.Zebra_DatePicker_Icon_Disabled,
+.Zebra_DatePicker_Icon_Disabled:hover {
+	background-image: url('../i/datepicker/calendar-disabled.png');
+	cursor: default;
+}
+
+.Zebra_DatePicker_Icon_Inside {
+	margin: 0 10px 0 0
+}
