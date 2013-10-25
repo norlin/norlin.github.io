@@ -3,11 +3,13 @@
 	"clean": false,
 	"config": {
 		"production": {
+			"prefix": "build.",
 			"www": "../",
 			"common": "common",
 			"host": "/common/"
 		},
 		"development": {
+			"prefix": "_",
 			"www": "../",
 			"common": "common",
 			"host": "common/"
