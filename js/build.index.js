@@ -213,7 +213,7 @@
 				throw new Error('Empty page! page: `' + page + '`');
 			}
 
-			app.renderModules($(html), router.node);
+			app.renderModules(html, router.node);
 			router.sandbox.emit('page', page);
 			router.update();
 		});
