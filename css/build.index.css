@@ -463,7 +463,7 @@
 
 .b-header_title {
   margin: 0;
-  padding: 0 0 0 27px;
+  padding: 0 0 0 100px;
   font-size: 13px;
   font-weight: normal;
   color: #fff;
@@ -752,6 +752,19 @@
 /* file: select.css */
 
 /* end module select */
+/* MODULE: title */
+.b-title {
+  position: relative;
+}
+
+.b-title_text {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* file: title.css */
+
+/* end module title */
 /* MODULE: loader */
 @-webkit-keyframes rotating {
   0% {
@@ -821,16 +834,3 @@
 /* file: loader.css */
 
 /* end module loader */
-/* MODULE: title */
-.b-title {
-  position: relative;
-}
-
-.b-title_text {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-/* file: title.css */
-
-/* end module title */

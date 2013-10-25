@@ -862,6 +862,43 @@
 /* file: select.dust */
 
 /* end module select */
+/* MODULE: title */
+/* global app */
+(function ($, app) {
+	var Title = app.createModule({
+			name: 'title',
+			template: 'title'
+		});
+
+	/*
+	Title.prototype.render = function (ready) {
+		var module = this,
+			moduleSource = this.data.dom; //`<div data-type="module">` node from app template
+
+		this.processDOM();
+
+		//method for custom html renderer
+
+		dust.render(this.name + '/' + this.template, this.data, function (err, moduleHtml) {
+			module.node = $(moduleHtml);
+			ready();
+		});
+	};
+	*/
+
+	Title.prototype.ready = function () {
+		var module = this,
+			title = this.node.find('.js-title-name');
+
+		module.sandbox.emit('name.title', title.html());
+	};
+} (jQuery, app));
+/* global -app */
+/* file: title.js */
+(function(){dust.register("title/title",body_0);function body_0(chk,ctx){return chk.write("<div class=\"b-title b-block").exists(ctx.getPath(false,["module","options","hidden"]),ctx,{"block":body_1},null).write("\"><h2 class=\"b-title_text js-title-name\">").reference(ctx.getPath(false,["module","content"]),ctx,"h",["s"]).write("</h2></div>");}function body_1(chk,ctx){return chk.write(" g-hidden");}return body_0;})();
+/* file: title.dust */
+
+/* end module title */
 /* MODULE: loader */
 /* global app */
 (function ($, app) {
@@ -967,43 +1004,6 @@
 /* file: loader.dust */
 
 /* end module loader */
-/* MODULE: title */
-/* global app */
-(function ($, app) {
-	var Title = app.createModule({
-			name: 'title',
-			template: 'title'
-		});
-
-	/*
-	Title.prototype.render = function (ready) {
-		var module = this,
-			moduleSource = this.data.dom; //`<div data-type="module">` node from app template
-
-		this.processDOM();
-
-		//method for custom html renderer
-
-		dust.render(this.name + '/' + this.template, this.data, function (err, moduleHtml) {
-			module.node = $(moduleHtml);
-			ready();
-		});
-	};
-	*/
-
-	Title.prototype.ready = function () {
-		var module = this,
-			title = this.node.find('.js-title-name');
-
-		module.sandbox.emit('name.title', title.html());
-	};
-} (jQuery, app));
-/* global -app */
-/* file: title.js */
-(function(){dust.register("title/title",body_0);function body_0(chk,ctx){return chk.write("<div class=\"b-title b-block").exists(ctx.getPath(false,["module","options","hidden"]),ctx,{"block":body_1},null).write("\"><h2 class=\"b-title_text js-title-name\">").reference(ctx.getPath(false,["module","content"]),ctx,"h",["s"]).write("</h2></div>");}function body_1(chk,ctx){return chk.write(" g-hidden");}return body_0;})();
-/* file: title.dust */
-
-/* end module title */
 (function(){dust.register("page/index",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"title","hidden":"true"}).write("<div class=\"b-block\">Initial commit<p>На этой страничке заголовок скрыт.</p></div>");}function body_1(chk,ctx){return chk.write("Hello, world!");}return body_0;})();
 /* file: index.dust */
 (function(){dust.register("page/page2",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"title"}).write("<div class=\"b-block\">Test page for initial commit</div>");}function body_1(chk,ctx){return chk.write("Goodbye, world!");}return body_0;})();
@@ -1020,4 +1020,4 @@
 	//}, 2000);
 
 }(window, jQuery, app));
-/* global -app */(function(){dust.register("index",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"header"}).helper("my",ctx,{},{"module":"router"}).helper("my",ctx,{},{"module":"footer","sticked":"true"}).helper("my",ctx,{},{"module":"loader"});}function body_1(chk,ctx){return chk.write("Norlin pages");}return body_0;})();
+/* global -app */(function(){dust.register("index",body_0);function body_0(chk,ctx){return chk.helper("my",ctx,{"block":body_1},{"module":"header"}).helper("my",ctx,{},{"module":"router"}).helper("my",ctx,{},{"module":"footer","sticked":"true"}).helper("my",ctx,{},{"module":"loader"});}function body_1(chk,ctx){return chk.write("pages");}return body_0;})();
