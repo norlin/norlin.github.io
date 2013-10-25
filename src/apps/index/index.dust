@@ -1,6 +1,8 @@
 {@my module="header"}pages{/my}
 
-{@my module="router"/}
+{@my module="router"}
+	{>"page/index"/}
+{/my}
 
 {@my module="footer" sticked="true"/}
 {@my module="loader"/}
